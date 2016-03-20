@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Заявка онлайн - Альфа-тур</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="style/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+    <link href="style/select2.css" rel="stylesheet">
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="clearfix">
+                <div class="main-logo">
+                    <a href="#">
+                        <img src="images/header/main_logo.png" alt="logo"/>
+                    </a>
+                </div>
+
+                <div class="box-contact-header">
+                    <span class="tel-header">8 (800) 123-45-67</span>
+                    <span class="tel-header">8 (800) 123-45-67</span>
+                    <span class="wrap-btn-yellow">
+                        <input class="popup-call_js btn-yellow" type="button" value="Перезвоните мне">
+                    </span>
+                </div><!--end BOX-CONTACT-->
+            </div><!--end CLEARFIX-->
+
+            <nav class="main-nav">
+                <ul>
+                    <li class="active"><a href='#'>О компании</a></li>
+                    <li><a href='#'>Подбор тура</a></li>
+                    <li><a href='#'>Контактная информация</a></li>
+                    <li><a href='#'>Акции</a></li>
+                    <li><a href='#'>Услуги</a></li>
+                    <li><a href='#'>Горящие туры</a></li>
+                    <li><a href='#'>Заявка онлайн</a></li>
+                </ul>
+            </nav><!--end MAIN-NAV-->
+        </header><!--end HEADER-->
+
+        <main class="content bg-contact">
+            <h1 class="main-header">Онлайн заявка:</h1>
+
+            <form action="#" method="post" class="form-box-online">
+                <ul class="box-filter-form">
+                    <li>
+                        <span class="name-input-filter">Страна:</span>
+                        <span class="custom-icon-select">
+                            <select class="size-width153">
+                                <option>Египет</option>
+                                <option>Турция</option>
+                            </select>
+                        </span>
+                    </li>
+
+                    <li>
+                        <span class="name-input-filter">Отель (звезд):</span>
+
+                        <ul class="list-number-stars">
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <span class="name-input-filter">Даты вылета:</span>
+                        <span class="custom-input-bg">
+                            <input type="text" class="input-calendar_js calendar_js" value="12/12/12">
+                        </span>
+
+                        <span class="hyphen">&#8212;</span>
+
+                        <span class="custom-input-bg">
+                            <input type="text" class="input-calendar_js calendar_js" value="12/12/12">
+                        </span>
+                    </li>
+
+                    <li>
+                        <span class="name-input-filter">Длительность тура:</span>
+                        <span class="custom-icon-select">
+                            <select class="size-width85">
+                                <option>6</option>
+                                <option>7</option>
+                            </select>
+                        </span>
+
+                        <span class="hyphen">&#8212;</span>
+
+                        <span class="custom-icon-select">
+                            <select class="size-width85">
+                                <option>16</option>
+                                <option>17</option>
+                            </select>
+                        </span>
+                        <span class="text-near-input">ночей</span>
+                    </li>
+
+                    <li>
+                        <span class="name-input-filter">Количество взрослых:</span>
+                        <span class="custom-icon-select">
+                            <select class="size-width85">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </span>
+                    </li>
+
+                    <li>
+                        <span class="name-input-filter">Количество детей:</span>
+                        <span class="custom-icon-select">
+                            <select class="size-width85">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </span>
+                    </li>
+
+                    <li>
+                        <span class="name-input-filter">Цена:</span>
+                        <span class="custom-icon-select">
+                            <select id="test" class="testclass size-width85 pad-left-no test1">
+                                <option>10000</option>
+                                <option>12000</option>
+                                <option>14000</option>
+                                <option>16000</option>
+                            </select>
+                        </span>
+
+                        <span class="hyphen">&#8212;</span>
+
+                        <span class="custom-icon-select">
+                            <select id="test2" class="testclass size-width85 pad-left-no test2">
+                                <option>20000</option>
+                                <option>22000</option>
+                                <option>24000</option>
+                                <option>26000</option>
+                            </select>
+                        </span>
+                    </li>
+                </ul><!--end BOX-FILTER-FORM-->
+
+                <div class="form-box-contact">
+                    <label>
+                        <span>Ваше имя:</span>
+                        <input type="text">
+                    </label>
+
+                    <label>
+                        <span>Ваше телефон:</span>
+                        <input class="tel-valid_js" type="text">
+                    </label>
+
+                    <label>
+                        <textarea></textarea>
+                        <span>Сообщение:</span>
+                    </label>
+
+                    <input type="submit" class="btn-big-blue btn-big-purple float-r btn-submit_js" value="Отправить заявку">
+                </div><!--end FORM-BOX-CONTACT-->
+            </form>
+        </main><!--end CONTENT-->
+    </div><!--end WRAPPER-->
+
+    <div class="wrap-footer">
+        <footer class="footer">
+            <div class="box-copyright">
+                Все права защищены<br>
+                &#169;2014 - alfa-tour.ru
+            </div><!--end BOX-COPYRIGHT-->
+
+            <div class="box-author">
+                <span>Идея и реализация:</span>
+                <img src="images/footer/author.png" alt="foto">
+            </div><!--end BOX-AUTHOR-->
+
+            <ul class="nav-footer">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Подбор тура</a></li>
+                <li><a href="#">Контактная информация</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Туры в рассрочку</a></li>
+                <li><a href="#">Подать заявку онлайн</a></li>
+            </ul><!--end NAV-FOOTER-->
+        </footer><!--end FOOTER-->
+    </div><!--end WRAP-FOOTER-->
+
+    <!--POPUP WINDOWS-->
+    <div id="bg-popup">
+        <div class="overview"></div>
+        <div id="wrap-popup">
+            <form class="form-box-contact form-box-contact_js" action="#" method="post">
+                <label>
+                    <span>Ваше имя:</span>
+                    <input type="text">
+                </label>
+
+                <label>
+                    <span>Ваше телефон:</span>
+                    <input class="tel-valid_js" type="text">
+                </label>
+
+                <label>
+                    <textarea></textarea>
+                    <span>Сообщение:</span>
+                </label>
+
+                <input type="submit" class="btn-big-blue btn-big-purple float-r btn-submit_js" value="Отправить заявку">
+            </form>
+        </div><!--end WRAP-POPUP-->
+    </div><!--end BG-POPUP-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/selectCustomPlugin.js"></script>
+    <script src="js/mainJs.js"></script>
+</body>
+</html>
